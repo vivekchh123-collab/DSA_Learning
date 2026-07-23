@@ -21,23 +21,18 @@ int main (){
 
 //2).
 int n;
-cout<<"Enter the number";
+cout<<"Enter the number:"<<endl;
 cin>>n;
 
-int i = 1;
-int j = 1;
-while (i<=n)
-{
-while (j<=n)
-{
-    cout<<j<<" ";
-    j++;
+int i=1;
+while(i<=9){
+    int j=1;
+    while(j<=n){
+        cout<<i<<" ";
+        j++;
+        i++;
+    }
+    cout<<endl;
+    
 }
-cout<<endl;
-i++;
-}
-
-
-
-
 }
