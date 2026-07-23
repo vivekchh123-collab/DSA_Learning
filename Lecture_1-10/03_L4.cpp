@@ -241,6 +241,37 @@ int main (){
 //     i++;  
 // }
 
+//13).
+
+int n;
+cout<<"Enter the number of row:";
+cin>>n;
+
+int i=1;
+int k=n;
+while(i<=n){
+    int start=1;
+    while (start<=k)
+    {
+        cout<<start;
+        start++;     
+    }
+    int star=2;
+    while (star<i*2)
+    {
+        cout<<"*";
+        star++;
+    }
+    int last=k;
+    while (last>=1)
+    {
+        cout<<last;
+        last--;
+    }
+    cout<<endl;
+    k--;
+    i++;  
+}
 
 
 }
