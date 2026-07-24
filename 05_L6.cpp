@@ -1,5 +1,6 @@
 #include<iostream>
 #include<math.h>
+#include <bitset>
 using namespace std;
 
 int main(){
@@ -38,8 +39,7 @@ int main(){
 //     n=n/10;
 //     i++;
 // }
-// cout << ans <<endl;
-
+// 
 
 
 }
