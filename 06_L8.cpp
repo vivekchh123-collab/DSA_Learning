@@ -16,9 +16,5 @@ int main() {
     //     break;
     //     default : cout <<"It is default case" << endl;  
     // }
-
-    
-
-
-    
+  
 }
