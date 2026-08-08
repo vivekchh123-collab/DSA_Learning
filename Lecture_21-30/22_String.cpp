@@ -98,19 +98,56 @@ swap(name[s++],name[e--]);
 
 //Reverse An aman in love to  nA nama ni evol
 
-int main(){
-    string name = "An man in love";
-    int n = name.length();
-    int start = 0;
+// int main(){
+//     string name = "An man in love";
+//     int n = name.length();
+//     int start = 0;
 
-    for (int i = 0; i <= n; i++) {
-        if (i == n || name[i] == ' ') {
-            reverse(name, start, i);
-            start = i + 1;
-        }
-    }
+//     for (int i = 0; i <= n; i++) {
+//         if (i == n || name[i] == ' ') {
+//             reverse(name, start, i);
+//             start = i + 1;
+//         }
+//     }
 
-    cout << name << endl;
-    return 0;
-}
+//     cout << name << endl;
+//     return 0;
+// }
+
+//Maximum occuring character in a string
+
+// char getMaxOccCharacter(string s){
+//     int arr[26] = {0};
+
+//     //create an array of count of charcter
+//     for(int i=0;i<s.length();i++){
+//         char ch = s[i];
+//         //lowercase
+//         int number = 0;
+//         if(ch>='a' && ch<= 'z'){
+//             number = ch - 'a';
+//         }
+//         else{
+//             //uppercase
+//             number = ch - 'A';
+//         }
+//         arr[number]++;
+//     }
+//     int max1  =-1, ans=0;
+//     for(int i=0;i<26;i++){
+//         if(max1<arr[i]){
+//             ans = i;
+//             max1 = arr[i];
+//         }
+//     }
+     
+//     return 'a' + ans;
+// }
+
+// int main (){
+//     string s;
+//     cin>> s;
+//     cout << getMaxOccCharacter(s)<<endl;
+//     return 0;
+// }
 
