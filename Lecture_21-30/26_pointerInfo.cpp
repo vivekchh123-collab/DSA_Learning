@@ -16,15 +16,37 @@ int main () {
     // int i=2;
     // cout<< i[arr] << endl;
 
-    int temp[10];
-    cout<< sizeof(temp) << endl;
-    cout<< sizeof(*temp) << endl;
-    cout<< sizeof(&temp) << endl;
+    // int temp[10];
+    // cout<< sizeof(temp) << endl;
+    // cout<< sizeof(*temp) << endl;
+    // cout<< sizeof(&temp) << endl;
 
-    int *ptr = &temp[10];
-    cout<< sizeof(ptr) << endl;
-    cout <<sizeof(*ptr) << endl;
-    cout <<sizeof(&ptr) << endl;
+    // int *ptr = &temp[10];
+    // cout<< sizeof(ptr) << endl;
+    // cout <<sizeof(*ptr) << endl;
+    // cout <<sizeof(&ptr) << endl;
+
+int a[20] = {1,2,3,5};
+//cout << " ->" << &a[0] << endl;
+// cout << &a << endl;
+//cout << a << endl;
+
+int *p = &a[0];
+//cout << p << endl;
+//cout << *p << endl;
+// cout << "-> " << &p << endl;
+
+
+
+int arr[10];
+
+//ERROR
+//arr = arr+1;
+
+int *ptr = &arr[0];
+cout << ptr << endl;
+ptr = ptr + 1;
+cout << ptr << endl;
 
 
 
