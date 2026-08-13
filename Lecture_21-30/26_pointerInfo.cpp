@@ -3,7 +3,7 @@ using namespace std;
 
 int main () {
 
-    int arr[10] = {2,5,4};
+    // int arr[10] = {2,5,4};
 
     // cout <<" address of first memory block is " << arr << endl;
     // cout << arr[0] << endl;
@@ -26,30 +26,46 @@ int main () {
     // cout <<sizeof(*ptr) << endl;
     // cout <<sizeof(&ptr) << endl;
 
-int a[20] = {1,2,3,5};
+// int a[20] = {1,2,3,5};
 //cout << " ->" << &a[0] << endl;
 // cout << &a << endl;
 //cout << a << endl;
 
-int *p = &a[0];
+// int *p = &a[0];
 //cout << p << endl;
 //cout << *p << endl;
 // cout << "-> " << &p << endl;
 
 
 
-int arr[10];
+// int arr[10];
 
 //ERROR
 //arr = arr+1;
 
-int *ptr = &arr[0];
-cout << ptr << endl;
-ptr = ptr + 1;
-cout << ptr << endl;
+// int *ptr = &arr[0];
+// cout << ptr << endl;
+// ptr = ptr + 1;
+// cout << ptr << endl;
+
+//Character array
 
 
+int arr[5] = {1,2,3,4,5};
+char ch[6] = "abcde";
 
+cout << arr << endl;
+//attention here
+cout << ch << endl;
+
+char *c = &ch[0];
+//prints entire string
+cout << c << endl;
+
+char temp = 'z';
+char *p = &temp;
+
+cout << p << endl;
 
 
    return 0;
