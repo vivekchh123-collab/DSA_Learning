@@ -1,6 +1,16 @@
 #include<iostream>
 using namespace std;
 
+int getSum(int *arr, int n) {
+
+    int sum = 0;
+    for(int i=0; i<n; i++) {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
 // void update1(int &n){
 //     n++; // This will change the original value of n in main
 // }
@@ -27,10 +37,25 @@ int main()
     // update1(a); // Passing a by reference
     // cout << "Value of a after update1: " << a << endl; // Output
 
-  char ch = 'A';
-  cout<< sizeof(ch)<<endl; // 1 byte
-  char *c = &ch;
-  cout<< sizeof(c)<<endl; // 8 bytes (on a 64-bit system)
+//   char ch = 'A';
+//   cout<< sizeof(ch)<<endl; // 1 byte
+//   char *c = &ch;
+//   cout<< sizeof(c)<<endl; // 8 bytes (on a 64-bit system)
+
+int n;
+cin >> n;
+
+//variable size array
+int* arr = new int[n];
+
+//takign inputn in aray
+for(int i=0; i<n; i++) {
+    cin >> arr[i];
+}
+
+int ans = getSum(arr, n);
+
+cout << "answer is " << ans << endl;
 
     return 0;
 }
