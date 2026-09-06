@@ -76,24 +76,84 @@ using namespace std;
 // }
 
 //Bubble Sort using recursion 
-void bubblesort(int arr[],int n){
-    if(n == 0 || n == 1){
-        return ;
-    }
-    for(int i = 0;i<n-1;i++){
-        if (arr[i] > arr[i + 1]) {
-                swap(arr[i], arr[i + 1]);
-            }
-    }
-    return bubblesort(arr,n-1);
+// void bubblesort(int arr[],int n){
+//     if(n == 0 || n == 1){
+//         return ;
+//     }
+//     for(int i = 0;i<n-1;i++){
+//         if (arr[i] > arr[i + 1]) {
+//                 swap(arr[i], arr[i + 1]);
+//             }
+//     }
+//     return bubblesort(arr,n-1);
 
+// }
+// int main(){
+//     int n = 5;
+//     int arr[] = {4,5,2,1,3};
+//     bubblesort(arr,n);
+//     for(int i = 0 ; i<n;i++){
+//         cout<<arr[i]<<endl;
+//     }
+//         return 0;
+// }
+
+// Selection Sort
+// void selectionSort(int arr[],int k,int n){
+//     if( k == n){
+//         return ;
+//     }
+//     int min_idx = k;
+//     for (int j = k + 1; j < n; j++) {
+//             if (arr[j] < arr[min_idx]) {
+//                 min_idx = j;
+//             }
+//         }
+        
+//         if (min_idx != k) {
+//             swap(arr[k], arr[min_idx]);
+//         }
+//         return selectionSort(arr,k+1,n);
+
+
+// }
+
+// int main(){
+//     int n = 5;
+//     int arr[] = {4,5,2,1,3};
+//     selectionSort(arr,0,n);
+//     for(int i = 0 ; i<n;i++){
+//         cout<<arr[i]<<endl;
+//     }
+//         return 0;
+// }
+
+//Insertion Sort
+void InsertionSort(int arr[],int k,int n){
+        if( k == n){
+        return ;}
+        int key = arr[k];      
+        int j = k - 1; 
+        
+         while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key; 
+        
+        return InsertionSort(arr,k+1,n);
 }
+
+
 int main(){
     int n = 5;
-    int arr[] = {4,5,2,1,3};
-    bubblesort(arr,n);
+    int arr[] = {12, 11, 13, 5, 6};
+    InsertionSort(arr,1,n);
     for(int i = 0 ; i<n;i++){
         cout<<arr[i]<<endl;
     }
         return 0;
 }
+
+
+
